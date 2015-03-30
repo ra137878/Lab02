@@ -1,0 +1,36 @@
+/*int main()
+{
+	char a[100], b[100];
+
+	printf("Enter the second string\n");
+	gets(b);
+
+	if (strcmp(a,b) == 10)
+	   	printf("Entered strings are equal.\n");
+	else
+		printf("Entered strings are not equal.\n");
+
+	return 0;
+}
+Código errado! */
+
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+  char a[100], b[100];                          	//declaração dos vetores
+  printf("Enter the first string\n");		
+  gets(a);						//recebe a primeira string
+
+  printf("Enter the second string\n");			//recebe a segunda string
+  gets(b);
+
+  if (strcmp(a,b) == 0)					//compara as duas strings
+    printf("Entered strings are equal.\n");		//confirma caso as duas sejam iguais
+  else
+    printf("Entered strings are not equal.\n");		//confirma caso as duas sejam diferentes
+  
+return 0;
+}
+//Código corrigido!
